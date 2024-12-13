@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: mongorad
+  data:
+    mongodb:
+      database: test
+server:
+  port: 10344
+  address: localhost
+
+
+de:
+  flapdoodle:
+    os:
+      explain: true
+    mongodb:
+      embedded:
+        databaseDir: ${java.io.tmpdir}/customDir/${random.uuid}
+        tools-version: 100.8.0
+        version: 7.0.0
